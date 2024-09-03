@@ -1,0 +1,50 @@
+.wrap {
+  padding: 2rem;
+  border: 2px saddlebrown;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgb(201, 48, 48);
+  color: white;
+}
+
+/* Media queries for responsiveness */
+
+/* For small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For extra small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
